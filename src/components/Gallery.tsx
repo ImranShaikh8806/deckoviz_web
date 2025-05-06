@@ -126,14 +126,14 @@ const Gallery: React.FC = () => {
     <section id="gallery" className="section-padding bg-white">
       <div className="container-custom">
         <h2 className="text-center mb-4">
-          Explore Our <span className="text-primary-600">Gallery</span>
+          Explore Our <span className="text-primary-600">Art Gallery</span>
         </h2>
         <p className="section-description">
           Discover a curated collection of stunning artworks across various categories.
         </p>
 
         {/* Category Tabs */}
-        <div className="flex justify-center space-x-4 mb-8">
+        <div className="flex justify-center mb-8 overflow-x-auto whitespace-nowrap flex-nowrap gap-2 px-2 pl-2 scrollbar-hide">
           {categories.map((category) => (
             <button
               key={category}
@@ -141,7 +141,7 @@ const Gallery: React.FC = () => {
                 setActiveCategory(category);
                 setCurrentImageIndex(0);
               }}
-              className={`px-4 py-2 rounded-lg transition-colors ${
+              className={`px-4 py-2 rounded-lg transition-colors min-w-max ${
                 activeCategory === category
                   ? 'bg-primary-600 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -153,13 +153,14 @@ const Gallery: React.FC = () => {
         </div>
 
         {/* Image Display */}
-        <div className="relative max-w-4xl mx-auto">
-          <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-xl overflow-hidden h-[400px]">
+        <div className="relative max-w-xl mx-auto">
+          {/* Exact fit without cropping */}
+          <div className="bg-gray-100 rounded-xl overflow-hidden h-100 flex items-center justify-center ">
             {currentItem && (
               <img
                 src={currentItem.image}
                 alt={currentItem.title}
-                className="w-full h-full object-cover"
+                className="max-w-full max-h-full object-contain"
               />
             )}
           </div>

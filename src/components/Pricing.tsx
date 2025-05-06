@@ -11,27 +11,27 @@ const Pricing: React.FC = () => {
     {
       name: 'Starter',
       price: '$299',
-      description: 'Perfect for your first Deckoviz experience',
+      description: 'Perfect for your first smart art experience',
       features: [
-        '32-inch display',
-        'Basic frame options',
-        'Standard AI curation',
-        '6 months free subscription',
-        'Standard delivery',
+        '7-inch HD display',
+        'Basic AI art curation',
+        'Wi-Fi connectivity',
+        '100+ art collection',
+        '3 month free subscription',
       ],
       buttonText: 'Buy Now',
     },
     {
       name: 'Premium',
       price: '$499',
-      description: 'Enhanced features for art enthusiasts',
+      description: 'Our most popular option for art enthusiasts',
       features: [
-        '43-inch display',
-        'Premium frame options',
-        'Advanced AI curation',
-        '9 months free subscription',
-        'Priority delivery',
-        'Exclusive art collections',
+        '12-inch 4K display',
+        'Advanced AI learning',
+        'Wi-Fi + Bluetooth',
+        'Unlimited art library',
+        'Motion & light sensors',
+        '1 year free subscription',
       ],
       isPopular: true,
       buttonText: 'Buy Now',
@@ -41,7 +41,7 @@ const Pricing: React.FC = () => {
       price: '$799',
       description: 'Gallery-quality display for discerning collectors',
       features: [
-        '55-inch display',
+        '21-inch 4K UHD display',
         'Premium finish options',
         'Advanced color calibration',
         'Priority new releases',
@@ -125,9 +125,7 @@ const Pricing: React.FC = () => {
           ))}
         </div>
 
-        <p className="text-center text-gray-500">
-          All plans include free shipping and a 30-day money back guarantee.
-        </p>
+      
         <p className="text-center mt-4">
           <a href="#" className="text-primary-600 hover:text-primary-700">
             View complete feature comparison

@@ -1,107 +1,77 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from './common/Button';
 
 const Navbar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleSectionNav = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/', { state: { scrollTo: sectionId } });
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setIsOpen(false);
+  };
+
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-sm py-2' : 'bg-transparent py-4'
-      }`}
-    >
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className="container-custom">
-        <nav className="flex items-center justify-between">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-primary-600 flex items-center">
-            Deckoviz
+          <Link to="/" className="flex items-center space-x-2">
+            <img src="/src/assets/gallery/logo.jpeg" alt="Deckoviz Logo" className="h-8 w-auto rounded-full" />
+            <span className="text-2xl font-bold text-primary-600">Deckoviz</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/#features" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Features
-            </Link>
-            <Link to="/#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">
-              How It Works
-            </Link>
-            <Link to="/#gallery" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Gallery
-            </Link>
-            <Link to="/#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Pricing
-            </Link>
+            <button onClick={() => handleSectionNav('features')} className="text-gray-700 hover:text-primary-600 transition-colors">Features</button>
+            <button onClick={() => handleSectionNav('how-it-works')} className="text-gray-700 hover:text-primary-600 transition-colors">How It Works</button>
+            <button onClick={() => handleSectionNav('gallery')} className="text-gray-700 hover:text-primary-600 transition-colors">Gallery</button>
+            <button onClick={() => handleSectionNav('pricing')} className="text-gray-700 hover:text-primary-600 transition-colors">Pricing</button>
             <Button variant="primary">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-gray-500 focus:outline-none" 
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-gray-700 hover:text-primary-600 transition-colors"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-        </nav>
+        </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white absolute top-full left-0 right-0 shadow-md py-4 px-4 flex flex-col space-y-4">
-            <Link 
-              to="/#features" 
-              className="text-gray-600 hover:text-gray-900 transition-colors py-2" 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Features
-            </Link>
-            <Link 
-              to="/#how-it-works" 
-              className="text-gray-600 hover:text-gray-900 transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              How It Works
-            </Link>
-            <Link 
-              to="/#gallery" 
-              className="text-gray-600 hover:text-gray-900 transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Gallery
-            </Link>
-            <Link 
-              to="/#pricing" 
-              className="text-gray-600 hover:text-gray-900 transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Pricing
-            </Link>
-            <Button variant="primary" className="w-full">Get Started</Button>
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden bg-white shadow-lg rounded-lg mt-2 p-4">
+            <div className="flex flex-col space-y-4">
+              <button onClick={() => handleSectionNav('features')} className="text-gray-700 hover:text-primary-600 transition-colors">Features</button>
+              <button onClick={() => handleSectionNav('how-it-works')} className="text-gray-700 hover:text-primary-600 transition-colors">How It Works</button>
+              <button onClick={() => handleSectionNav('gallery')} className="text-gray-700 hover:text-primary-600 transition-colors">Gallery</button>
+              <button onClick={() => handleSectionNav('pricing')} className="text-gray-700 hover:text-primary-600 transition-colors">Pricing</button>
+              <Button variant="primary" className="w-full">Get Started</Button>
+            </div>
           </div>
         )}
       </div>
-    </header>
+    </nav>
   );
 };
 

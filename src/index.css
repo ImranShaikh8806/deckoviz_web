@@ -6,10 +6,12 @@
   html {
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply font-sans text-gray-800 antialiased;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
