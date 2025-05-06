@@ -454,7 +454,7 @@ const PlaceOrder: React.FC = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition-colors"
+              className="bg-primary-600 text-white px-6 py-2.5 rounded-lg text-base font-semibold hover:bg-primary-700 transition-colors"
             >
               Confirm and Place Order
             </button>

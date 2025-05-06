@@ -27,6 +27,9 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white text-gray-800">
+      {/* Top Border */}
+      <div className="border-t border-gray-200"></div>
+      
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -139,6 +142,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* Bottom Border */}
         <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500">
           <p>&copy; {new Date().getFullYear()} Deckoviz. All rights reserved.</p>
         </div>

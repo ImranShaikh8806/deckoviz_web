@@ -183,40 +183,40 @@ const Pricing = () => {
           {pricingTiers.map((tier, index) => (
             <div
               key={index}
-              className={`rounded-xl p-6 shadow-md transition-all duration-300 hover:shadow-lg flex flex-col ${
+              className={`rounded-xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.15)] hover:-translate-y-1 flex flex-col ${
                 tier.isPopular
-                  ? 'bg-purple-50 border-2 border-purple-200 relative'
-                  : 'bg-white border border-gray-200'
+                  ? 'bg-purple-50 border-2 border-purple-200 relative group'
+                  : 'bg-white border border-gray-200 group'
               }`}
             >
               {tier.isPopular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-medium shadow-lg">
                     Most Popular
                   </span>
                 </div>
               )}
               
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-purple-600 transition-colors duration-300">{tier.name}</h3>
                 <div className="mb-4">
                   {tier.price === 0 ? (
-                    <span className="text-4xl font-bold">Custom</span>
+                    <span className="text-4xl font-bold group-hover:text-purple-600 transition-colors duration-300">Custom</span>
                   ) : (
                     <>
-                      <span className="text-4xl font-bold">${tier.price}</span>
+                      <span className="text-4xl font-bold group-hover:text-purple-600 transition-colors duration-300">${tier.price}</span>
                       <span className="text-gray-500">/frame</span>
                     </>
                   )}
                 </div>
-                <p className="text-gray-600">{tier.description}</p>
+                <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">{tier.description}</p>
               </div>
               
               <ul className="space-y-3 mb-6">
                 {tier.features.slice(0, 5).map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start">
-                    <Check size={18} className="text-purple-600 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700 text-sm">{feature}</span>
+                  <li key={featureIndex} className="flex items-start group/item">
+                    <Check size={18} className="text-purple-600 mr-2 mt-1 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
+                    <span className="text-gray-700 text-sm group-hover/item:text-gray-900 transition-colors duration-300">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -224,9 +224,9 @@ const Pricing = () => {
               {tier.features.length > 5 && (
                 <button
                   onClick={() => openModal(tier)}
-                  className="text-purple-600 hover:text-purple-700 font-medium text-sm mb-6 flex items-center justify-center w-full"
+                  className="text-purple-600 hover:text-purple-700 font-medium text-sm mb-6 flex items-center justify-center w-full group/button"
                 >
-                  <span>See all features</span>
+                  <span className="group-hover/button:underline transition-all duration-300">See all features</span>
                 </button>
               )}
               
@@ -234,7 +234,7 @@ const Pricing = () => {
                 <Button 
                   variant={tier.isPopular ? "primary" : "black"}
                   size="md" 
-                  className="w-full py-2"
+                  className="w-full py-2 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
                   onClick={() => handleBuyNow(tier)}
                 >
                   {tier.buttonText}

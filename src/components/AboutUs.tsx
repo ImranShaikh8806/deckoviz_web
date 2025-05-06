@@ -1,50 +1,100 @@
 import React from 'react';
-import { ArrowRight, Sparkles, Heart, Lightbulb, Users } from 'lucide-react';
-import Button from './common/Button';
+import { Users, Target, Award, Heart } from 'lucide-react';
 
 const AboutUs: React.FC = () => {
+  const values = [
+    {
+      icon: <Heart className="w-8 h-8 text-primary-600" />,
+      title: "Passion for Art",
+      description: "We believe in the transformative power of art and its ability to inspire and connect people."
+    },
+    {
+      icon: <Target className="w-8 h-8 text-primary-600" />,
+      title: "Innovation",
+      description: "Constantly pushing boundaries to create cutting-edge technology that enhances the art experience."
+    },
+    {
+      icon: <Award className="w-8 h-8 text-primary-600" />,
+      title: "Excellence",
+      description: "Committed to delivering the highest quality products and services to our customers."
+    },
+    {
+      icon: <Users className="w-8 h-8 text-primary-600" />,
+      title: "Community",
+      description: "Building a vibrant community of art lovers and technology enthusiasts."
+    }
+  ];
+
+  const team = [
+    {
+      name: "Sarah Johnson",
+      role: "Founder & CEO",
+      image: "/src/assets/gallery/Gemini_Generated_Image_3gz8ov3gz8ov3gz8.jpeg",
+      bio: "Art enthusiast with 15 years of experience in technology and design."
+    },
+    {
+      name: "Michael Chen",
+      role: "CTO",
+      image: "/src/assets/gallery/Gemini_Generated_Image_3gz8ow3gz8ow3gz8.jpeg",
+      bio: "AI expert passionate about creating seamless user experiences."
+    },
+    {
+      name: "Emma Rodriguez",
+      role: "Head of Design",
+      image: "/src/assets/gallery/Gemini_Generated_Image_3gz8oy3gz8oy3gz8.jpeg",
+      bio: "Award-winning designer with a background in fine arts and digital media."
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="pt-20">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+      <section className="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-              About <span className="text-primary-600">Deckoviz</span>
-            </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
+            <p className="text-xl text-white/90">
               At Deckoviz, we are reimagining what it means to live, work, and feel within a space.
-              We are a next-generation company innovating at the frontier where AI personalization, art, home and office décor, and smart technology converge.
+              We are a next-generation company innovating at the frontier where AI personalization,
+              art, home and office décor, and smart technology converge.
             </p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
       {/* Mission Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container-custom">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="w-full lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
               <p className="text-gray-600 mb-6">
-                Our mission is simple yet profound: to infuse everyday environments with more beauty, meaning, emotion, vitality, and wonder — powered by the most human-centric technologies ever created.
+                Our mission is simple yet profound: to infuse everyday environments with more beauty,
+                meaning, emotion, vitality, and wonder — powered by the most human-centric
+                technologies ever created.
               </p>
               <p className="text-gray-600 mb-6">
-                Our flagship product — the Deckoviz AI Smart Art and Space Enhancement Frame — is the first step into a new dimension of living. It is more than a frame. It is a living, evolving companion for your spaces — a dynamic portal that transforms your walls and rooms into reflections of your innermost moods, memories, dreams, and desires.
+                <strong>Our flagship product — the Deckoviz AI Smart Art and Space Enhancement Frame — 
+                is the first step into a new dimension of living.</strong> It is more than a frame.
+                It is a living, evolving companion for your spaces — a dynamic portal that transforms
+                your walls and rooms into reflections of your innermost moods, memories, dreams, and desires.
               </p>
               <p className="text-gray-600">
-                Through the power of proprietary AI personalization engines, generative creativity, and intelligent curation, Deckoviz creates deeply personalized, multisensory visual experiences — designed to inspire, soothe, energize, or uplift, depending on your intentions and needs.
+                Through the power of proprietary AI personalization engines, generative creativity,
+                and intelligent curation, Deckoviz creates deeply personalized, multisensory visual
+                experiences — designed to inspire, soothe, energize, or uplift, depending on your
+                intentions and needs. Every piece of art it displays, every visual it curates,
+                is attuned to your unique life, spirit, and essence.
               </p>
             </div>
-            <div className="w-full lg:w-1/2">
-              <div className="bg-primary-100 rounded-xl p-6 shadow-lg">
-                <div className="aspect-w-16 aspect-h-9 bg-primary-400 rounded-lg overflow-hidden">
-                  <img 
-                    src="/src/assets/gallery/Gemini_Generated_Image_13xtu213xtu213xt.jpeg" 
-                    alt="Deckoviz Frame" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+            <div className="relative">
+              <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="/src/assets/gallery/Gemini_Generated_Image_13xtu213xtu213xt.jpeg"
+                  alt="Our Mission"
+                  className="object-cover w-full h-full"
+                />
               </div>
             </div>
           </div>
@@ -52,91 +102,46 @@ const AboutUs: React.FC = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-20 bg-gray-50">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Beliefs</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Because we believe technology should not just be functional —
-            </p>
-          </div>
-          
+          <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <Sparkles className="w-6 h-6 text-primary-600" />
+            {values.map((value, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div className="mb-4">{value.icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
+                <p className="text-gray-600">{value.description}</p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">It should be beautiful</h3>
-              <p className="text-gray-600">Creating visually stunning experiences that inspire and delight.</p>
-            </div>
-            
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <Heart className="w-6 h-6 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">It should be magical</h3>
-              <p className="text-gray-600">Transforming ordinary spaces into extraordinary experiences.</p>
-            </div>
-            
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <Lightbulb className="w-6 h-6 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">It should be emotionally enriching</h3>
-              <p className="text-gray-600">Creating deeper connections and meaningful experiences.</p>
-            </div>
-            
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">It should help us live more intentionally</h3>
-              <p className="text-gray-600">Enabling more expressive and joyful living through technology.</p>
-            </div>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <p className="text-xl font-semibold mb-4">Because we believe technology should not just be functional —</p>
+            <ul className="text-gray-600 space-y-2">
+              <li>It should be beautiful.</li>
+              <li>It should be magical.</li>
+              <li>It should be emotionally enriching.</li>
+              <li>It should help us live more intentionally, more expressively, more joyfully.</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* Vision Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Vision</h2>
-            <div className="space-y-6 text-gray-600">
-              <p>
-                We envision a world where your spaces are not static, but alive with your story.
-                Where art evolves with you.
-                Where your home and work environments are extensions of your innermost self — vibrant, dynamic, deeply personal.
-              </p>
-              <p>
-                We are building the next generation of products at the crossroads of art, AI, smart technology, and design — creating living environments that resonate emotionally, artistically, and intelligently with the people who inhabit them.
-              </p>
-              <p>
-                Deckoviz is just the beginning.
-                Our mission is to develop an ecosystem of cutting-edge, artistically rich, technologically beautiful products that continue to blur the lines between technology, art, and life — breathing curiosity, wonder, joy, and inspiration into every corner of your world.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-primary-600 text-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Join Us in Creating a More Beautiful Future
-            </h2>
-            <p className="text-lg mb-8 opacity-90">
-              If you believe that the spaces where we live and work should inspire us —
-              If you dream of living in environments that feel, grow, respond, and reflect who you are —
-              Then you are already part of the Deckoviz vision.
-            </p>
-            <Button variant="secondary" size="lg">
-              Get Started
-              <ArrowRight size={20} className="ml-2" />
-            </Button>
-          </div>
+      <section className="py-20 bg-primary-600 text-white">
+        <div className="container-custom text-center">
+          <h2 className="text-3xl font-bold mb-6">Join Our Journey</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            At Deckoviz, we are pioneering a new category — AI-powered spatial enhancement — 
+            bringing future-ready beauty, personalization, and emotion into homes, offices, 
+            cafés, hotels, wellness spaces, and beyond.
+          </p>
+          <button className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Get Started
+          </button>
         </div>
       </section>
     </div>

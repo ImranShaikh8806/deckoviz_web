@@ -1,96 +1,64 @@
 import React from 'react';
-import { Palette, Cpu, Wifi, Maximize, Clock, Zap, Image, Users, Music, Tv, Search, Sparkles, MessageSquare, Home } from 'lucide-react';
-import FeatureCard from './common/FeatureCard';
+import { Sparkles, Zap, Heart, Shield, Clock, RefreshCw } from 'lucide-react';
 
 const Features: React.FC = () => {
   const features = [
     {
-      icon: <Image size={24} />,
-      title: "Reimagine Your Photos",
-      description: "Transform your personal photos into the style of your favorite artists — from Van Gogh to Studio Ghibli."
+      icon: <Sparkles className="w-6 h-6" />,
+      title: "AI-Powered Art",
+      description: "Experience art that evolves with your mood, preferences, and the time of day, creating a truly personalized visual experience."
     },
     {
-      icon: <Palette size={24} />,
-      title: "Personalize Iconic Art",
-      description: "Imagine The Starry Night, but it features your family on the hilltop. Art history, with your story."
+      icon: <Zap className="w-6 h-6" />,
+      title: "Smart Technology",
+      description: "Advanced sensors and AI algorithms that understand your space and adapt the art to create the perfect ambiance."
     },
     {
-      icon: <Sparkles size={24} />,
-      title: "Your Personal Painter",
-      description: "A creative AI that knows you. It paints your dreams, desires, and moments with deep emotional nuance."
+      icon: <Heart className="w-6 h-6" />,
+      title: "Personalized Experience",
+      description: "Your Deckoviz learns from your preferences and creates art that resonates with your unique style and personality."
     },
     {
-      icon: <Maximize size={24} />,
-      title: "AI Style Transfer + Image to GIF/Video",
-      description: "Turn static images into animations, gifs, or cinematic loops. Make The Last Supper blink, sway, breathe."
+      icon: <Shield className="w-6 h-6" />,
+      title: "Premium Quality",
+      description: "Crafted with the finest materials and cutting-edge technology to ensure stunning visuals and lasting durability."
     },
     {
-      icon: <Search size={24} />,
-      title: "Intelligent Art Search",
-      description: "Use natural language to search our expansive library. Find paintings by mood, meaning, memory, or color."
+      icon: <Clock className="w-6 h-6" />,
+      title: "Always Fresh",
+      description: "Never see the same art twice. Our AI continuously generates new, unique pieces to keep your space dynamic and engaging."
     },
     {
-      icon: <Palette size={24} />,
-      title: "Create Your Own Collection",
-      description: "Curate themed collections, set display preferences, attach music, and craft visual journeys."
-    },
-    {
-      icon: <Music size={24} />,
-      title: "Multimodal Art Experiences",
-      description: "Every collection has its perfect sonic backdrop. Music and art in beautiful sync."
-    },
-    {
-      icon: <Clock size={24} />,
-      title: "Dynamic Display Engine",
-      description: "Deckoviz learns your rhythms. It changes based on time of day, mood, occasion, or emotion."
-    },
-    {
-      icon: <Palette size={24} />,
-      title: "Deckoviz Marketplace",
-      description: "Explore, buy, or sell art. Digital or physical. Discover new artists and support creativity."
-    },
-    {
-      icon: <MessageSquare size={24} />,
-      title: "Personalized Quotes & Posters",
-      description: "Design daily affirmations or custom quotes in aesthetic, artful frames — tailored to your energy."
-    },
-    {
-      icon: <Users size={24} />,
-      title: "Visual Storytelling for Kids and Families",
-      description: "Tell bedtime stories visually. Make learning, sharing, and bonding beautifully engaging."
-    },
-    {
-      icon: <Home size={24} />,
-      title: "Multi-Space Adaptation",
-      description: "Deckoviz adapts to you — wherever you are. Make your space feel alive."
-    },
-    {
-      icon: <Tv size={24} />,
-      title: "Smart TV Functionality",
-      description: "Deckoviz runs on Android TV. So yes, you can Netflix and chill when you're not gallery-mode dreaming."
+      icon: <RefreshCw className="w-6 h-6" />,
+      title: "Easy Updates",
+      description: "Regular software updates bring new features and improvements, ensuring your Deckoviz stays at the cutting edge."
     }
   ];
 
   return (
-    <section id="features" className="section-padding bg-white">
+    <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
       <div className="container-custom">
-        <div className="section-title">
-          <h2 className="text-center mb-3">
-            🌟 Features & <span className="text-primary-600">Highlights</span>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800">
+            Why Choose <span className="text-primary-600">Deckoviz</span>?
           </h2>
-          <p className="section-description">
-            What can Deckoviz do? A whole lot.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Experience the perfect blend of art and technology with our innovative features.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <FeatureCard
-              key={index}
-              icon={feature.icon}
-              title={feature.title}
-              description={feature.description}
-            />
+            <div 
+              key={index} 
+              className="group bg-white rounded-xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.15)] transition-all duration-300 border border-gray-100 hover:border-primary-100 hover:-translate-y-1"
+            >
+              <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center text-primary-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-primary-600 transition-colors duration-300">{feature.title}</h3>
+              <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">{feature.description}</p>
+            </div>
           ))}
         </div>
       </div>

@@ -46,10 +46,10 @@ const WhoIsDeckovizFor: React.FC = () => {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-gradient-to-b from-white to-gray-50">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800">
             Who is <span className="text-primary-600">Deckoviz</span> For?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -61,13 +61,13 @@ const WhoIsDeckovizFor: React.FC = () => {
           {segments.map((segment, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+              className="group bg-white rounded-xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.15)] transition-all duration-300 border border-gray-100 hover:border-primary-100 hover:-translate-y-1"
             >
-              <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center text-primary-600 mb-4">
+              <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center text-primary-600 mb-4 group-hover:scale-110 transition-transform duration-300">
                 {segment.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3">{segment.title}</h3>
-              <p className="text-gray-600">{segment.description}</p>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-primary-600 transition-colors duration-300">{segment.title}</h3>
+              <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">{segment.description}</p>
             </div>
           ))}
         </div>

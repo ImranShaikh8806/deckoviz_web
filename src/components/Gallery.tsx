@@ -133,23 +133,27 @@ const Gallery: React.FC = () => {
         </p>
 
         {/* Category Tabs */}
-        <div className="flex justify-center mb-8 overflow-x-auto whitespace-nowrap flex-nowrap gap-2 px-2 pl-2 scrollbar-hide">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => {
-                setActiveCategory(category);
-                setCurrentImageIndex(0);
-              }}
-              className={`px-4 py-2 rounded-lg transition-colors min-w-max ${
-                activeCategory === category
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              {category}
-            </button>
-          ))}
+        <div className="relative mb-8">
+          <div className="flex justify-start md:justify-center overflow-x-auto whitespace-nowrap flex-nowrap gap-2 px-4 py-2 scrollbar-hide">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => {
+                  setActiveCategory(category);
+                  setCurrentImageIndex(0);
+                }}
+                className={`px-4 py-2 rounded-lg transition-colors min-w-max ${
+                  activeCategory === category
+                    ? 'bg-primary-600 text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+          {/* Gradient fade effect for mobile */}
+          <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none md:hidden"></div>
         </div>
 
         {/* Image Display */}

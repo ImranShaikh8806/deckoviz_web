@@ -46,8 +46,9 @@ const App: React.FC = () => {
           <>
             <Hero />
             <Features />
-            <HowItWorks />
             <WhoIsDeckovizFor />
+            <HowItWorks />
+            
             <Gallery />
             <Testimonials />
             <Referral />
