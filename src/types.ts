@@ -15,7 +15,7 @@ export interface StepProps {
 
 export interface ButtonProps {
   children: React.ReactNode;
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'black';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
   withIcon?: boolean;

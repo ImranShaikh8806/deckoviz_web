@@ -13,6 +13,12 @@ import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Referral from './components/Referral';
 import FAQ from './components/FAQ';
+import WhoIsDeckovizFor from './components/WhoIsDeckovizFor';
+import Contact from './components/Contact';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
+import ShippingPolicy from './components/ShippingPolicy';
+import ReturnPolicy from './components/ReturnPolicy';
 
 const ScrollToSectionOnHome: React.FC = () => {
   const location = useLocation();
@@ -41,15 +47,21 @@ const App: React.FC = () => {
             <Hero />
             <Features />
             <HowItWorks />
+            <WhoIsDeckovizFor />
             <Gallery />
             <Testimonials />
             <Referral />
-            <Pricing />
             <FAQ />
+            <Pricing />
           </>
         } />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/place-order" element={<PlaceOrder />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/shipping-policy" element={<ShippingPolicy />} />
+        <Route path="/return-policy" element={<ReturnPolicy />} />
       </Routes>
       <Footer />
     </Router>

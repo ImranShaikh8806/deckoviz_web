@@ -1,0 +1,88 @@
+import React from 'react';
+import { Home, Hotel, Building2, Sofa, Coffee, ShoppingBag, Briefcase, Heart } from 'lucide-react';
+
+const WhoIsDeckovizFor: React.FC = () => {
+  const segments = [
+    {
+      icon: <Home size={24} />,
+      title: "Homeowners and Renters",
+      description: "For those who want to infuse their homes with the magic of generative AI and deeply personal art. Whether you're craving tranquility, inspiration, or vibrant energy—Deckoviz transforms your space to match your inner world."
+    },
+    {
+      icon: <Hotel size={24} />,
+      title: "Hotels and Hospitality Spaces",
+      description: "Elevate lobbies, suites, lounges, and premium experiences with dynamic, ever-evolving visuals that captivate guests, spark conversation, and express your brand's essence."
+    },
+    {
+      icon: <Building2 size={24} />,
+      title: "Real Estate Developers",
+      description: "Bring showrooms and model homes to life with smart art that adapts to buyer personas, elevates staging, and showcases the future of elegant, tech-forward living."
+    },
+    {
+      icon: <Sofa size={24} />,
+      title: "Electronics & Home Decor Stores",
+      description: "Add an irresistible edge to your showroom. Demo how tech and decor beautifully blend—and sell more by showing what's possible."
+    },
+    {
+      icon: <Coffee size={24} />,
+      title: "Restaurants & Cafes",
+      description: "Create an unforgettable vibe. Use AI-powered visual storytelling to enhance ambiance, reinforce brand identity, and shape customer moods—from cozy to high-energy."
+    },
+    {
+      icon: <ShoppingBag size={24} />,
+      title: "Shops and Boutiques",
+      description: "Design your atmosphere like a pro—whether it's minimalist chic or artsy and vibrant. Enhance customer experience and stay memorable with every glance."
+    },
+    {
+      icon: <Briefcase size={24} />,
+      title: "Offices & Co-Working Spaces",
+      description: "Boost creativity, calm, and clarity. From focused productivity modes to ambient inspiration, Deckoviz supports emotional and mental wellness at work."
+    },
+    {
+      icon: <Heart size={24} />,
+      title: "Studios, Clinics & Schools",
+      description: "Whether you're running a yoga studio, a therapy office, or a classroom—Deckoviz helps set the right tone. Calm, uplift, or energize your space, naturally and beautifully."
+    }
+  ];
+
+  return (
+    <section className="section-padding bg-white">
+      <div className="container-custom">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4">
+            Who is <span className="text-primary-600">Deckoviz</span> For?
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Deckoviz is for anyone who wants to turn walls, homes and spaces into living, breathing expressions of beauty, mood, and meaning.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {segments.map((segment, index) => (
+            <div 
+              key={index} 
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+            >
+              <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center text-primary-600 mb-4">
+                {segment.icon}
+              </div>
+              <h3 className="text-xl font-semibold mb-3">{segment.title}</h3>
+              <p className="text-gray-600">{segment.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-16 space-y-4">
+          <p className="text-xl text-gray-700 font-medium">
+            Deckoviz is for spaces that want to feel alive.
+          </p>
+          <p className="text-lg text-gray-600">
+            For people who value beauty, emotion, and expression. For environments that deserve more than static walls.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhoIsDeckovizFor; 
