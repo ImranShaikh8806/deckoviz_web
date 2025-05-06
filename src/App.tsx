@@ -48,7 +48,6 @@ const App: React.FC = () => {
             <Features />
             <WhoIsDeckovizFor />
             <HowItWorks />
-            
             <Gallery />
             <Testimonials />
             <Referral />

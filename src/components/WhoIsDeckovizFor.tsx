@@ -49,7 +49,7 @@ const WhoIsDeckovizFor: React.FC = () => {
     <section className="section-padding bg-gradient-to-b from-white to-gray-50">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800">
+          <h2 className="text-4xl font-bold mb-4">
             Who is <span className="text-primary-600">Deckoviz</span> For?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
