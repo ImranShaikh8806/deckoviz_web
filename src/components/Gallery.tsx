@@ -15,6 +15,7 @@ const Gallery: React.FC = () => {
   const categories = ['Abstract', 'Landscapes', 'Portraits', 'Minimalist', 'Digital Art'];
 
   const galleryItems: GalleryItem[] = [
+    // Abstract Category
     {
       id: 1,
       image: '/src/assets/gallery/Gemini_Generated_Image_13xtu213xtu213xt.jpeg',
@@ -36,73 +37,291 @@ const Gallery: React.FC = () => {
     {
       id: 4,
       image: '/src/assets/gallery/Gemini_Generated_Image_2n33ho2n33ho2n33.jpeg',
-      title: 'Mountain View',
-      category: 'Landscapes'
+      title: 'Abstract Art 4',
+      category: 'Abstract'
     },
     {
       id: 5,
       image: '/src/assets/gallery/Gemini_Generated_Image_331ux1331ux1331u.jpeg',
-      title: 'Coastal Scene',
-      category: 'Landscapes'
+      title: 'Abstract Art 5',
+      category: 'Abstract'
     },
     {
       id: 6,
       image: '/src/assets/gallery/Gemini_Generated_Image_37pr6z37pr6z37pr.jpeg',
-      title: 'Forest Path',
-      category: 'Landscapes'
+      title: 'Abstract Art 6',
+      category: 'Abstract'
     },
     {
       id: 7,
       image: '/src/assets/gallery/Gemini_Generated_Image_3gz8ov3gz8ov3gz8.jpeg',
-      title: 'Portrait Study 1',
-      category: 'Portraits'
+      title: 'Abstract Art 7',
+      category: 'Abstract'
     },
     {
       id: 8,
       image: '/src/assets/gallery/Gemini_Generated_Image_3gz8ow3gz8ow3gz8.jpeg',
-      title: 'Portrait Study 2',
-      category: 'Portraits'
+      title: 'Abstract Art 8',
+      category: 'Abstract'
     },
     {
       id: 9,
       image: '/src/assets/gallery/Gemini_Generated_Image_3gz8oy3gz8oy3gz8.jpeg',
-      title: 'Portrait Study 3',
-      category: 'Portraits'
+      title: 'Abstract Art 9',
+      category: 'Abstract'
     },
     {
       id: 10,
       image: '/src/assets/gallery/Gemini_Generated_Image_3gz8p13gz8p13gz8.jpeg',
-      title: 'Minimal Design 1',
-      category: 'Minimalist'
+      title: 'Abstract Art 10',
+      category: 'Abstract'
     },
+
+    // Landscapes Category
     {
       id: 11,
       image: '/src/assets/gallery/Gemini_Generated_Image_3nahv13nahv13nah.jpeg',
-      title: 'Minimal Design 2',
-      category: 'Minimalist'
+      title: 'Mountain View',
+      category: 'Landscapes'
     },
     {
       id: 12,
       image: '/src/assets/gallery/Gemini_Generated_Image_52pei052pei052pe.jpg',
-      title: 'Minimal Design 3',
-      category: 'Minimalist'
+      title: 'Coastal Scene',
+      category: 'Landscapes'
     },
     {
       id: 13,
       image: '/src/assets/gallery/Gemini_Generated_Image_7awqtl7awqtl7awq.jpeg',
-      title: 'Digital Creation 1',
-      category: 'Digital Art'
+      title: 'Forest Path',
+      category: 'Landscapes'
     },
     {
       id: 14,
       image: '/src/assets/gallery/Gemini_Generated_Image_7bvrcz7bvrcz7bvr.jpeg',
-      title: 'Digital Creation 2',
-      category: 'Digital Art'
+      title: 'Desert Sunset',
+      category: 'Landscapes'
     },
     {
       id: 15,
       image: '/src/assets/gallery/Gemini_Generated_Image_7bvrd07bvrd07bvr.jpeg',
+      title: 'Lake Reflection',
+      category: 'Landscapes'
+    },
+    {
+      id: 16,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu213xtu213xt.jpeg',
+      title: 'Valley View',
+      category: 'Landscapes'
+    },
+    {
+      id: 17,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu513xtu513xt.jpeg',
+      title: 'Waterfall Scene',
+      category: 'Landscapes'
+    },
+    {
+      id: 18,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu613xtu613xt.jpeg',
+      title: 'Mountain Lake',
+      category: 'Landscapes'
+    },
+    {
+      id: 19,
+      image: '/src/assets/gallery/Gemini_Generated_Image_2n33ho2n33ho2n33.jpeg',
+      title: 'Autumn Forest',
+      category: 'Landscapes'
+    },
+    {
+      id: 20,
+      image: '/src/assets/gallery/Gemini_Generated_Image_331ux1331ux1331u.jpeg',
+      title: 'Beach Sunset',
+      category: 'Landscapes'
+    },
+
+    // Portraits Category
+    {
+      id: 21,
+      image: '/src/assets/gallery/Gemini_Generated_Image_37pr6z37pr6z37pr.jpeg',
+      title: 'Portrait Study 1',
+      category: 'Portraits'
+    },
+    {
+      id: 22,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3gz8ov3gz8ov3gz8.jpeg',
+      title: 'Portrait Study 2',
+      category: 'Portraits'
+    },
+    {
+      id: 23,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3gz8ow3gz8ow3gz8.jpeg',
+      title: 'Portrait Study 3',
+      category: 'Portraits'
+    },
+    {
+      id: 24,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3gz8oy3gz8oy3gz8.jpeg',
+      title: 'Portrait Study 4',
+      category: 'Portraits'
+    },
+    {
+      id: 25,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3gz8p13gz8p13gz8.jpeg',
+      title: 'Portrait Study 5',
+      category: 'Portraits'
+    },
+    {
+      id: 26,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3nahv13nahv13nah.jpeg',
+      title: 'Portrait Study 6',
+      category: 'Portraits'
+    },
+    {
+      id: 27,
+      image: '/src/assets/gallery/Gemini_Generated_Image_52pei052pei052pe.jpg',
+      title: 'Portrait Study 7',
+      category: 'Portraits'
+    },
+    {
+      id: 28,
+      image: '/src/assets/gallery/Gemini_Generated_Image_7awqtl7awqtl7awq.jpeg',
+      title: 'Portrait Study 8',
+      category: 'Portraits'
+    },
+    {
+      id: 29,
+      image: '/src/assets/gallery/Gemini_Generated_Image_7bvrcz7bvrcz7bvr.jpeg',
+      title: 'Portrait Study 9',
+      category: 'Portraits'
+    },
+    {
+      id: 30,
+      image: '/src/assets/gallery/Gemini_Generated_Image_7bvrd07bvrd07bvr.jpeg',
+      title: 'Portrait Study 10',
+      category: 'Portraits'
+    },
+
+    // Minimalist Category
+    {
+      id: 31,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu213xtu213xt.jpeg',
+      title: 'Minimal Design 1',
+      category: 'Minimalist'
+    },
+    {
+      id: 32,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu513xtu513xt.jpeg',
+      title: 'Minimal Design 2',
+      category: 'Minimalist'
+    },
+    {
+      id: 33,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu613xtu613xt.jpeg',
+      title: 'Minimal Design 3',
+      category: 'Minimalist'
+    },
+    {
+      id: 34,
+      image: '/src/assets/gallery/Gemini_Generated_Image_2n33ho2n33ho2n33.jpeg',
+      title: 'Minimal Design 4',
+      category: 'Minimalist'
+    },
+    {
+      id: 35,
+      image: '/src/assets/gallery/Gemini_Generated_Image_331ux1331ux1331u.jpeg',
+      title: 'Minimal Design 5',
+      category: 'Minimalist'
+    },
+    {
+      id: 36,
+      image: '/src/assets/gallery/Gemini_Generated_Image_37pr6z37pr6z37pr.jpeg',
+      title: 'Minimal Design 6',
+      category: 'Minimalist'
+    },
+    {
+      id: 37,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3gz8ov3gz8ov3gz8.jpeg',
+      title: 'Minimal Design 7',
+      category: 'Minimalist'
+    },
+    {
+      id: 38,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3gz8ow3gz8ow3gz8.jpeg',
+      title: 'Minimal Design 8',
+      category: 'Minimalist'
+    },
+    {
+      id: 39,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3gz8oy3gz8oy3gz8.jpeg',
+      title: 'Minimal Design 9',
+      category: 'Minimalist'
+    },
+    {
+      id: 40,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3gz8p13gz8p13gz8.jpeg',
+      title: 'Minimal Design 10',
+      category: 'Minimalist'
+    },
+
+    // Digital Art Category
+    {
+      id: 41,
+      image: '/src/assets/gallery/Gemini_Generated_Image_3nahv13nahv13nah.jpeg',
+      title: 'Digital Creation 1',
+      category: 'Digital Art'
+    },
+    {
+      id: 42,
+      image: '/src/assets/gallery/Gemini_Generated_Image_52pei052pei052pe.jpg',
+      title: 'Digital Creation 2',
+      category: 'Digital Art'
+    },
+    {
+      id: 43,
+      image: '/src/assets/gallery/Gemini_Generated_Image_7awqtl7awqtl7awq.jpeg',
       title: 'Digital Creation 3',
+      category: 'Digital Art'
+    },
+    {
+      id: 44,
+      image: '/src/assets/gallery/Gemini_Generated_Image_7bvrcz7bvrcz7bvr.jpeg',
+      title: 'Digital Creation 4',
+      category: 'Digital Art'
+    },
+    {
+      id: 45,
+      image: '/src/assets/gallery/Gemini_Generated_Image_7bvrd07bvrd07bvr.jpeg',
+      title: 'Digital Creation 5',
+      category: 'Digital Art'
+    },
+    {
+      id: 46,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu213xtu213xt.jpeg',
+      title: 'Digital Creation 6',
+      category: 'Digital Art'
+    },
+    {
+      id: 47,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu513xtu513xt.jpeg',
+      title: 'Digital Creation 7',
+      category: 'Digital Art'
+    },
+    {
+      id: 48,
+      image: '/src/assets/gallery/Gemini_Generated_Image_13xtu613xtu613xt.jpeg',
+      title: 'Digital Creation 8',
+      category: 'Digital Art'
+    },
+    {
+      id: 49,
+      image: '/src/assets/gallery/Gemini_Generated_Image_2n33ho2n33ho2n33.jpeg',
+      title: 'Digital Creation 9',
+      category: 'Digital Art'
+    },
+    {
+      id: 50,
+      image: '/src/assets/gallery/Gemini_Generated_Image_331ux1331ux1331u.jpeg',
+      title: 'Digital Creation 10',
       category: 'Digital Art'
     }
   ];
