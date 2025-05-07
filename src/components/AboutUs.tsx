@@ -29,19 +29,19 @@ const AboutUs: React.FC = () => {
     {
       name: "Sarah Johnson",
       role: "Founder & CEO",
-      image: "/src/assets/gallery/Gemini_Generated_Image_3gz8ov3gz8ov3gz8.jpeg",
+      image: "/images/Gemini_Generated_Image_3gz8ov3gz8ov3gz8.jpeg",
       bio: "Art enthusiast with 15 years of experience in technology and design."
     },
     {
       name: "Michael Chen",
       role: "CTO",
-      image: "/src/assets/gallery/Gemini_Generated_Image_3gz8ow3gz8ow3gz8.jpeg",
+      image: "/images/Gemini_Generated_Image_3gz8ow3gz8ow3gz8.jpeg",
       bio: "AI expert passionate about creating seamless user experiences."
     },
     {
       name: "Emma Rodriguez",
       role: "Head of Design",
-      image: "/src/assets/gallery/Gemini_Generated_Image_3gz8oy3gz8oy3gz8.jpeg",
+      image: "/images/Gemini_Generated_Image_3gz8oy3gz8oy3gz8.jpeg",
       bio: "Award-winning designer with a background in fine arts and digital media."
     }
   ];
@@ -91,7 +91,7 @@ const AboutUs: React.FC = () => {
             <div className="relative">
               <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-xl">
                 <img
-                  src="/src/assets/gallery/Gemini_Generated_Image_13xtu213xtu213xt.jpeg"
+                  src="/images/Gemini_Generated_Image_13xtu213xtu213xt.jpeg"
                   alt="Our Mission"
                   className="object-cover w-full h-full"
                 />

@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     <section 
       className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden relative"
       style={{
-        backgroundImage: 'url("/src/assets/gallery/Gemini_Generated_Image_13xtu213xtu213xt.jpeg")',
+        backgroundImage: 'url("/images/Gemini_Generated_Image_13xtu213xtu213xt.jpeg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
