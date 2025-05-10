@@ -111,7 +111,7 @@ const PlaceOrder: React.FC = () => {
 
   if (!selectedTier) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 ">
         <div className="text-center p-8 bg-white rounded-xl shadow-lg max-w-md w-full">
           <h2 className="text-2xl font-bold mb-4">No Pricing Tier Selected</h2>
           <p className="text-gray-600 mb-6">Please select a pricing tier from the pricing page to continue.</p>
@@ -128,7 +128,7 @@ const PlaceOrder: React.FC = () => {
 
   if (showSuccess) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 ">
         <div className="text-center p-8 bg-white rounded-xl shadow-lg max-w-md w-full">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <Check className="text-green-500" size={32} />
@@ -141,7 +141,7 @@ const PlaceOrder: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-gray-50 py-12 pt-20">
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-2">Get Your Deckoviz</h1>
         <p className="text-xl text-gray-600 text-center mb-12">

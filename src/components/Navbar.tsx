@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/images/logo.jpeg" alt="Deckoviz Logo" className="h-8 w-auto rounded-full" />
+            <img src="/images/logo.png" alt="Deckoviz Logo" className="h-9 w-auto rounded-full" />
             <span className="text-2xl font-bold text-primary-600">Deckoviz</span>
           </Link>
 
