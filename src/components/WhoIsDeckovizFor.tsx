@@ -14,6 +14,26 @@ const WhoIsDeckovizFor: React.FC = () => {
       description: "Elevate lobbies, suites, lounges, and premium experiences with dynamic, ever-evolving visuals that captivate guests, spark conversation, and express your brand's essence."
     },
     {
+      icon: <Coffee size={24} />,
+      title: "Restaurants & Cafes",
+      description: "Create an unforgettable vibe. Use AI-powered visual storytelling to enhance ambiance, reinforce brand identity, and shape customer moods—from cozy to high-energy."
+    },
+    {
+      icon: <Briefcase size={24} />,
+      title: "Offices & Co-Working Spaces",
+      description: "Boost creativity, calm, and clarity. From focused productivity modes to ambient inspiration, Deckoviz supports emotional and mental wellness at work."
+    },
+    {
+      icon: <ShoppingBag size={24} />,
+      title: "Shops and Boutiques",
+      description: "Design your atmosphere like a pro—whether it's minimalist chic or artsy and vibrant. Enhance customer experience and stay memorable with every glance."
+    },
+    {
+      icon: <Heart size={24} />,
+      title: "Studios, Clinics & Schools",
+      description: "Whether you're running a yoga studio, a therapy office, early learning spaces—Deckoviz helps set the right tone. Calm, uplift, inspire, or energize your space, naturally and beautifully."
+    },
+    {
       icon: <Building2 size={24} />,
       title: "Real Estate Developers",
       description: "Bring showrooms and model homes to life with smart art that adapts to buyer personas, elevates staging, and showcases the future of elegant, tech-forward living."
@@ -22,26 +42,6 @@ const WhoIsDeckovizFor: React.FC = () => {
       icon: <Sofa size={24} />,
       title: "Electronics & Home Decor Stores",
       description: "Add an irresistible edge to your showroom. Demo how tech and decor beautifully blend—and sell more by showing what's possible."
-    },
-    {
-      icon: <Coffee size={24} />,
-      title: "Restaurants & Cafes",
-      description: "Create an unforgettable vibe. Use AI-powered visual storytelling to enhance ambiance, reinforce brand identity, and shape customer moods—from cozy to high-energy."
-    },
-    {
-      icon: <ShoppingBag size={24} />,
-      title: "Shops and Boutiques",
-      description: "Design your atmosphere like a pro—whether it's minimalist chic or artsy and vibrant. Enhance customer experience and stay memorable with every glance."
-    },
-    {
-      icon: <Briefcase size={24} />,
-      title: "Offices & Co-Working Spaces",
-      description: "Boost creativity, calm, and clarity. From focused productivity modes to ambient inspiration, Deckoviz supports emotional and mental wellness at work."
-    },
-    {
-      icon: <Heart size={24} />,
-      title: "Studios, Clinics & Schools",
-      description: "Whether you're running a yoga studio, a therapy office, or a classroom—Deckoviz helps set the right tone. Calm, uplift, or energize your space, naturally and beautifully."
     }
   ];
 
@@ -53,7 +53,7 @@ const WhoIsDeckovizFor: React.FC = () => {
             Who is <span className="text-primary-600">Deckoviz</span> For?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Deckoviz is for anyone who wants to turn walls, homes and spaces into living, breathing expressions of beauty, mood, and meaning.
+            Deckoviz is for anyone who wants to turn walls, homes and spaces into living, breathing expressions of beauty, mood, emotion, and meaning.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const WhoIsDeckovizFor: React.FC = () => {
             Deckoviz is for spaces that want to feel alive.
           </p>
           <p className="text-lg text-gray-600">
-            For people who value beauty, emotion, and expression. For environments that deserve more than static walls.
+            For people who value beauty, emotion, and expression. For environments that deserve more than static walls and spaces. 
           </p>
         </div>
       </div>
