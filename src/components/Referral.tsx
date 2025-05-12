@@ -10,7 +10,7 @@ const Referral: React.FC = () => {
             Referral <span className="text-primary-600">Bonus</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            If you refer someone from your friends, family, or anyone else who might be interested, we'll send a neat $25 into your bank account.
+            If you refer someone from your friends, family, or anyone else who might be interested, we'll send a neat $20 into your bank account.
           </p>
           <p className="text-lg text-primary-600 font-semibold mt-4">
             Yes, it is as simple as that!
@@ -24,7 +24,7 @@ const Referral: React.FC = () => {
               <h3 className="text-xl font-semibold">Referral Rewards</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              For every person you refer to, using your unique username, we give you £20 straight to your bank account.
+              For every person you refer to, using your unique username, we give you $20 straight to your bank account.
             </p>
             <p className="text-gray-600">
               Or choose a subscription bonus instead:
@@ -32,15 +32,15 @@ const Referral: React.FC = () => {
             <ul className="mt-4 space-y-2">
               <li className="flex items-center text-gray-600">
                 <CheckCircle className="text-primary-600 mr-2" size={16} />
-                3 months of ultra premium
+                1 month of ultra premium
               </li>
               <li className="flex items-center text-gray-600">
                 <CheckCircle className="text-primary-600 mr-2" size={16} />
-                6 months of premium
+                2 months of premium
               </li>
               <li className="flex items-center text-gray-600">
                 <CheckCircle className="text-primary-600 mr-2" size={16} />
-                9 months of basic subscription
+                3 months of basic subscription
               </li>
             </ul>
           </div>
