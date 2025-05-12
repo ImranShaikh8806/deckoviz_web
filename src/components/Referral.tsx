@@ -10,7 +10,7 @@ const Referral: React.FC = () => {
             Referral <span className="text-primary-600">Bonus</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            If you refer someone from your friends, family, or anyone else who might be interested, we'll send a neat $20 into your bank account.
+            If you refer Deckoviz to friends, family, or anyone else who might be interested, we'll send a neat $20 into your bank account.
           </p>
           <p className="text-lg text-primary-600 font-semibold mt-4">
             Yes, it is as simple as that!
@@ -24,23 +24,23 @@ const Referral: React.FC = () => {
               <h3 className="text-xl font-semibold">Referral Rewards</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              For every person you refer to, using your unique username, we give you $20 straight to your bank account.
+              For every person you refer to, using your unique referral code, we send a sweet $20 straight to your bank account.
             </p>
             <p className="text-gray-600">
-              Or choose a subscription bonus instead:
+              For more value, you can always choose a subscription bonus instead (psst, the subscriptions rewards are better value):
             </p>
             <ul className="mt-4 space-y-2">
               <li className="flex items-center text-gray-600">
                 <CheckCircle className="text-primary-600 mr-2" size={16} />
-                1 month of ultra premium
+                2 months of ultra premium
               </li>
               <li className="flex items-center text-gray-600">
                 <CheckCircle className="text-primary-600 mr-2" size={16} />
-                2 months of premium
+                3 months of premium
               </li>
               <li className="flex items-center text-gray-600">
                 <CheckCircle className="text-primary-600 mr-2" size={16} />
-                3 months of basic subscription
+                4 months of basic subscription
               </li>
             </ul>
           </div>
@@ -53,9 +53,9 @@ const Referral: React.FC = () => {
                   <Send className="text-primary-600" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">You send an invite</h4>
+                  <h4 className="font-semibold mb-1">1. Share your referral link</h4>
                   <p className="text-gray-600">
-                    Pick a plan for them or send them a referral link so they can choose themselves.
+                    Send your unique link or username to a friend, family member, or anyone you think would love Deckoviz. 
                   </p>
                 </div>
               </div>
@@ -64,9 +64,9 @@ const Referral: React.FC = () => {
                   <CreditCard className="text-primary-600" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">They make a purchase</h4>
+                  <h4 className="font-semibold mb-1">2. They make a purchase</h4>
                   <p className="text-gray-600">
-                    Referral rewards apply to hosting, VPS, and email plans of 12+ months, and all 1-month Hostinger Horizons plans.
+                    Once they buy a Deckoviz Smart Frame through your link, they’re automatically tagged as your referral. If it's ten people who have purchased through your link, here is a sweet $200 in your pocket, just like that. 
                   </p>
                 </div>
               </div>
@@ -75,9 +75,9 @@ const Referral: React.FC = () => {
                   <CheckCircle className="text-primary-600" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">They're active for at least 45 days</h4>
+                  <h4 className="font-semibold mb-1">3. They're enjoying Deckoviz - we know they will! </h4>
                   <p className="text-gray-600">
-                    The referred client keeps their subscription active and doesn't request a refund.
+                    The referred user keeps their subscription active and doesn't request a refund.
                   </p>
                 </div>
               </div>
@@ -86,9 +86,9 @@ const Referral: React.FC = () => {
                   <Gift className="text-primary-600" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">You get your commission</h4>
+                  <h4 className="font-semibold mb-1">4. You get paid</h4>
                   <p className="text-gray-600">
-                    Your earnings are sent to you via PayPal or Wire Transfer.
+                    We wire $20 directly to your bank account or PayPal account. 
                   </p>
                 </div>
               </div>
