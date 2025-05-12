@@ -53,7 +53,7 @@ const WhoIsDeckovizFor: React.FC = () => {
             Who is <span className="text-primary-600">Deckoviz</span> For?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Deckoviz is for anyone who wants to turn walls, homes and spaces into living, breathing expressions of beauty, mood, emotion, and meaning.
+            Deckoviz is for anyone who wants to turn walls, homes and spaces into living, breathing expressions of beauty, mood, emotion, and meaning. For those who want to enhance their spaces - both inner and outer - with more joy, intentionality, sublimity, personality, radiance, life, and the richness of being.
           </p>
         </div>
 
