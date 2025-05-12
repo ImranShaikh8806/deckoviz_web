@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Deckoviz</h3>
             <p className="text-gray-600">
-              Transforming spaces with AI-powered art frames and smart display technology.
+              Transforming spaces, moments, and lives with AI-powered art frames and smart display technology.
             </p>
             <div className="flex space-x-4 mt-4">
               <a
@@ -111,9 +111,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="text-gray-600">Email: surajpandya3012@gmail.com</li>
+              <li className="text-gray-600">Email: suraj@forofuse.com</li>
               <li className="text-gray-600">Phone: +44 7448 006087</li>
-              <li className="text-gray-600">London, United Kingdom</li>
+            //  <li className="text-gray-600">London, United Kingdom</li> //
             </ul>
           </div>
 
