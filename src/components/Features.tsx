@@ -32,17 +32,17 @@ const Features: React.FC = () => {
     {
       icon: <Palette size={24} />,
       title: "Create Your Own Collection",
-      description: "Curate themed collections, set display preferences, attach music, and craft visual journeys."
+      description: "Curate themed collections, set display preferences, attach music, and craft and enjoy visual journeys."
     },
     {
       icon: <Music size={24} />,
       title: "Multimodal Art Experiences",
-      description: "Every collection has its perfect sonic backdrop. Music and art in beautiful sync."
+      description: "Every collection has its perfect sonic backdrop, curated or created by Vizzy. Music and art in beautiful sync."
     },
     {
       icon: <Clock size={24} />,
       title: "Dynamic Display Engine",
-      description: "Deckoviz learns your rhythms. It changes based on time of day, mood, occasion, or emotion."
+      description: "Deckoviz learns your rhythms, your mind, your life. It changes based on time of day, mood, occasion, emotion, special occasions, rhythms, vibes and more. "
     },
     {
       icon: <Palette size={24} />,
@@ -61,13 +61,33 @@ const Features: React.FC = () => {
     },
     {
       icon: <Home size={24} />,
+      title: "Rituals and Interactive Experiences",
+      description: "Set rituals like morning ritual, evening ritual, storytelling etc, family dinner ritual, periodic rituals and actions. For instance, wake up to a dynamic forest vista with the sounds of chirping birds. "
+    },
+    {
+      icon: <Home size={24} />,
       title: "Multi-Space Adaptation",
-      description: "Deckoviz adapts to you — wherever you are. Make your space feel alive."
+      description: "Deckoviz adapts to you — however you want it to, wherever you are. Make your spaces come alive, be it homes, offices, cafés, clinics, studios."
+    },
+    {
+      icon: <Home size={24} />,
+      title: "Personalized Curator",
+      description: "Enjoy the curations from Vizzy, your personal curator, who finds you just the perfect artworks, visuals and more, just for the right moments."
+    },
+    {
+      icon: <Home size={24} />,
+      title: "New, Dynamic Modalities of Art",
+      description: "Enjoy new, personalized, dynamic modes of art made possible just now - such as dynamic multiple frame artworks, narration-infused speaking art and visuals, unique multimodal experiences, with image, text, sound and music creation. "
+    },
+     {
+      icon: <Home size={24} />,
+      title: "More Present, More Connected",
+      description: "Become more grounded, more present, more connected, with rituals and interactive experiences like meditation, visualization, mindfulness, deep conversations, and more. "
     },
     {
       icon: <Tv size={24} />,
-      title: "Smart TV Functionality",
-      description: "Deckoviz runs on Android TV. So yes, you can Netflix and chill when you're not gallery-mode dreaming."
+      title: "Also... it’s a Smart TV",
+      description: "Deckoviz adapts to you — wherever you are. Make your space feel alive."
     }
   ];
 
@@ -79,7 +99,7 @@ const Features: React.FC = () => {
             Features & <span className="text-primary-600">Highlights</span>
           </h2>
           <p className="section-description">
-            What can Deckoviz do? A whole lot.
+            What can Deckoviz do? A whole lot. And it's only getting better with time, as we keep shipping new features in the pursuit of creating the greatest emotionally intelligent, dynamic, and personalized art experience. 
           </p>
         </div>
 
