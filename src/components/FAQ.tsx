@@ -53,14 +53,34 @@ const FAQ: React.FC = () => {
       category: "Product"
     },
     {
+      question: "What makes Deckoviz special?",
+      answer: "This section won't do justice, so recommend checking out our blog post on this, but the short version is we have designed a powerful emotionally intelligent AI architecture, that learns about you and from you, to curate, create and present the most attuned and personal art, storytelling and state-setting experiences. Our AI only gets better with time, as it learns who you are, and as its own curatorial and creative abilities get enhanced, even more so with its deep, empathic understanding of you, your mind, your emotions, your being, your life. Our goal is to build the greatest attuned and personalized art experience for people, with an aligned and emotionally intelligent AI buddy, Vizzy.",
+      category: "Advanced"
+    },
+    {
       question: "How does Deckoviz personalize art for me?",
       answer: "Deckoviz uses a proprietary AI that learns from your preferences, moods, feedback, and interaction patterns over time. It doesn't just react to what you like — it actively evolves alongside you, recognizing subtleties in your taste, emotional states, rhythms of your life, and even the aspirations you express.",
       category: "Advanced"
     },
     {
       question: "What is emotional curation?",
-      answer: "Emotional curation is the heart of Deckoviz. Rather than simply showing random beautiful images, Deckoviz selects and arranges visuals, moods, and experiences that resonate with your emotional landscape. It aims to uplift you when you need energy, calm you when you seek peace, spark wonder when you feel curious, and nurture awe when you crave inspiration.",
+      answer: "Emotional curation is the heart of Deckoviz. Rather than simply showing random beautiful images, Deckoviz selects and arranges visuals, moods, and experiences that resonate with your emotional landscape. It aims to uplift you when you need energy, calm you when you seek peace, spark wonder when you feel curious, and nurture awe when you crave inspiration. It’s about matching art and atmosphere to the invisible moments and feelings that shape your daily life.",
       category: "Advanced"
+    },
+    {
+      question: "Why is personalization so important for spaces?",
+      answer: "We design our spaces, and then, they influence - and design us. Spaces shape our emotions, thoughts, creativity, and well-being — often more than we consciously realize. A truly personalized space doesn’t just look good — it feels alive, inspiring, grounding, or energizing, depending on what your soul needs. Deckoviz exists to help you reclaim your environment as an extension of your inner self — dynamic, evolving, uniquely yours.",
+      category: "Advanced"
+    },
+     {
+      question: "Can Deckoviz create art specifically for me?",
+      answer: "Yes — and it gets better the longer you live with it. Deckoviz’s creative AI engines can generate unique artworks inspired by your style, mood, and preferences. Over time, you’ll see not just curated images, but wholly new, original creations that feel like they were dreamed up just for you — because in a way, they are.",
+      category: "Advanced"
+    },
+     {
+      question: "How is Deckoviz different from a digital photo frame or smart TV?",
+      answer: "While digital frames simply rotate pictures, Deckoviz uses our powerful proprietary AI architecture to curate, create, personalize, and even evolve your art over time. It's not just a display — it’s an emotionally intelligent art companion that brings true atmosphere and storytelling into your space.",
+      category: "Product"
     }
   ];
 
