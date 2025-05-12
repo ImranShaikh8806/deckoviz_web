@@ -124,7 +124,7 @@ const Hero = () => {
             Introducing <span className="font-semibold italic">The World's First AI-Powered Dynamic Art Frame</span>
           </p>
           <p className="text-center text-gray-700 text-lg mb-6">
-            Deckoviz turns your space into a living canvas — a smart art experience that evolves with you. It brings the power of generative AI, personalized design, and immersive visuals into your home, workspace, or hospitality space.
+            Deckoviz turns your space into a living canvas — a smart art experience that evolves with you. It brings the power of generative AI, personalized art, and immersive visuals into your home, workspace, or hospitality space.
           </p>
           
           {/* Main content with carousels */}
@@ -286,10 +286,10 @@ const Hero = () => {
           </div>
 
           <p className="text-gray-700 text-lg font-medium">
-            Infuse your life with joy, inspiration, calm, and wonder — every single day.
+            Infuse your life with joy, inspiration, calm, beauty and wonder — every single day.
           </p>
           <p className="text-gray-600 mb-12">
-            From Van Gogh to Ghibli, from personal memories to dreamlike stories, Deckoviz reimagines your walls like never before.
+            From Van Gogh to Ghibli, from personal memories to dreamlike stories, Deckoviz reimagines your homes and spaces like never before.
           </p>
           
           {/* Horizontal scrolling moods */}
