@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Instagram, Linkedin } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+const baseUrl = import.meta.env.VITE_API_BASE_URL
 
 const Footer: React.FC = () => {
   const [name, setName] = useState('');
@@ -12,6 +13,7 @@ const Footer: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log(baseUrl);
     
     if (!name || !email) {
       setSubscribeMessage('Please fill in all fields');
@@ -22,7 +24,7 @@ const Footer: React.FC = () => {
     setSubscribeMessage('');
     
     try {
-      const response = await fetch('https://auth.deckoviz.com/auth/newsletter/', {
+      const response = await fetch(`${baseUrl}auth/newsletter/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
