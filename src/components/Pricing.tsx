@@ -20,10 +20,10 @@ const Pricing = () => {
   const pricingTiers: PricingPlan[] = [
     {
       name: 'Starter',
-      price: 400,
+      price: 699,
       description: 'Your gateway to a smarter, more beautiful world.',
       features: [
-        '32-inch HD Smart Display',
+        '43-inch HD Smart Display',
         'Basic AI features for smart curation',
         'Advanced AI learning and personalization',
         'Unlimited and expanding art library',
@@ -36,10 +36,10 @@ const Pricing = () => {
     },
     {
       name: 'Premium',
-      price: 600,
+      price: 949,
       description: 'Our most loved choice for art, personalization, and storytelling.',
       features: [
-        '43-inch Full HD Smart Display',
+        '55-inch Full HD Smart Display',
         'Advanced AI features with dynamic learning',
         'Expanded storage and customization features',
         'Unlimited and expanding art library',
@@ -54,7 +54,7 @@ const Pricing = () => {
     },
     {
       name: 'Professional',
-      price: 900,
+      price: 1199,
       description: 'The ultimate Deckoviz experience — breathtaking, personal, extraordinary.',
       features: [
         '55-inch 4K UHD Premium Display',
@@ -173,10 +173,10 @@ const Pricing = () => {
     <section id="pricing" className="section-padding bg-white py-16">
       <div className="container mx-auto px-4 max-w-7xl">
         <h2 className="text-4xl font-bold text-center mb-4">
-          Simple, Transparent <span className="text-purple-600">Pricing</span>
+          Simple <span className="text-purple-600">Pricing</span>
         </h2>
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-          Choose the perfect Deckoviz frame to match your space and budget.
+          Choose the perfect Deckoviz frame to match your space, your dreams, and your lifestyle. And enjoy early bird discounts of 20% off while discounts still apply! 
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
