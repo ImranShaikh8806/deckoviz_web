@@ -85,9 +85,39 @@ const Features: React.FC = () => {
       description: "Become more grounded, more present, more connected, with rituals and interactive experiences like meditation, visualization, mindfulness, deep conversations, and more. "
     },
     {
+      icon: <Home size={24} />,
+      title: "Customized, handcrafted frames, just for you",
+      description: "Savour handcrafted ornate frame designs as per your preferences, such as having your favourite phrases carved on the wood, so that your Deckoviz can be a masterpiece unto itself, even with nothing on"
+    },
+    {
+      icon: <Home size={24} />,
+      title: "Set your tone for the day",
+      description: "Create and enjoy a dynamic and evolving moodboard or vision board. "
+    },
+    {
+      icon: <Home size={24} />,
+      title: "Loads of goodies for the kiddies",
+      description: "Deckoviz comes with an amazing suite of features for kids, like storytelling visualization, creative storytelling, art creation and narration, learning visualization and lots more. "
+    },
+    {
+      icon: <Home size={24} />,
+      title: "Enjoy multisensory art experiences",
+      description: "Immerse yourself in a multisensory state setting and art experience, with just the right music picked for you by your Vizzy. "
+    },
+    {
+      icon: <Home size={24} />,
+      title: "Co-create artworks with your partner, with your family, with your friends",
+      description: "Through our socially modal art features, collaboration features, and more, bring creations to life with your favourite people, for a brand new modality of art experience. "
+    },
+    {
+      icon: <Home size={24} />,
+      title: "A space that to with you, with art that speaks with you",
+      description: "Enjoy a new look, a fresh vibe, every day, every hour, with walls and spaces that are alive, intelligent, and always evolving, according to the rhymes and rhythms of your life. "
+    },
+    {
       icon: <Tv size={24} />,
       title: "Also... it’s a Smart TV",
-      description: "Deckoviz adapts to you — wherever you are. Make your space feel alive."
+      description: "Deckoviz runs on Google/Android TV. So yes, you can use your favourite TV apps like YouTube and Netflix when you're not art-scape dreaming."
     }
   ];
 
