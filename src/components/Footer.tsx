@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
     setSubscribeMessage('');
     
     try {
-      const response = await fetch(`${baseUrl}auth/newsletter/`, {
+      const response = await fetch('https://auth.deckoviz.com/auth/newsletter/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -34,11 +34,13 @@ const Footer: React.FC = () => {
           email,
         }),
       });
-      
-      if (response.ok) {
+      console.log(response);
+      if (response.status == 201) {
         setName('');
         setEmail('');
         setSubscribeMessage('Successfully subscribed!');
+        
+        
       } else {
         setSubscribeMessage('Subscription failed. Please try again.');
       }
@@ -99,21 +101,12 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => handleSectionNav('features')} 
-                  className="text-gray-600 hover:text-primary-600 transition-colors"
-                >
-                  Features
-                </button>
+                <Link to="/blog" className="text-gray-600 hover:text-primary-600 transition-colors">
+                  Blog
+                </Link>
               </li>
-              <li>
-                <button 
-                  onClick={() => handleSectionNav('how-it-works')} 
-                  className="text-gray-600 hover:text-primary-600 transition-colors"
-                >
-                  How It Works
-                </button>
-              </li>
+            
+          
               <li>
                 <button 
                   onClick={() => handleSectionNav('gallery')} 

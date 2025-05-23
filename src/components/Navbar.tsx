@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button onClick={() => handleSectionNav('features')} className="text-gray-700 hover:text-primary-600 transition-colors">Features</button>
             <button onClick={() => handleSectionNav('how-it-works')} className="text-gray-700 hover:text-primary-600 transition-colors">How It Works</button>
-            <button onClick={() => handleSectionNav('gallery')} className="text-gray-700 hover:text-primary-600 transition-colors">Gallery</button>
+            <Link to="/blog" className="text-gray-700 hover:text-primary-600 transition-colors">Blog</Link>
             <button onClick={() => handleSectionNav('pricing')} className="text-gray-700 hover:text-primary-600 transition-colors">Pricing</button>
             <Button variant="primary">Get Started</Button>
           </div>
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
             <div className="flex flex-col space-y-4">
               <button onClick={() => handleSectionNav('features')} className="text-gray-700 hover:text-primary-600 transition-colors">Features</button>
               <button onClick={() => handleSectionNav('how-it-works')} className="text-gray-700 hover:text-primary-600 transition-colors">How It Works</button>
-              <button onClick={() => handleSectionNav('gallery')} className="text-gray-700 hover:text-primary-600 transition-colors">Gallery</button>
+              <Link to="/blog" className="text-gray-700 hover:text-primary-600 transition-colors">Blog</Link>
               <button onClick={() => handleSectionNav('pricing')} className="text-gray-700 hover:text-primary-600 transition-colors">Pricing</button>
               <Button variant="primary" className="w-full">Get Started</Button>
             </div>
