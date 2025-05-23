@@ -136,15 +136,18 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
-{/*           <div>
-{/*             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+     {/* Contact Info */}
+{/* 
+          <div>
+            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="text-gray-600">Email: suraj@forofuse.com</li> */}
-{/*               <li className="text-gray-600">Phone: +44 7448 006087</li> */}
-{/*               <li className="text-gray-600">London, United Kingdom</li> */}
+              <li className="text-gray-600">Email: suraj@forofuse.com</li>
+              <li className="text-gray-600">Phone: +44 7448 006087</li>
+              <li className="text-gray-600">London, United Kingdom</li>
             </ul>
-          </div> */}
+          </div> 
+*/}
+
 
           {/* Newsletter */}
           <div>
