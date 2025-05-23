@@ -163,7 +163,7 @@ const Blog = () => {
       <section className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">Blogs</span>
+            Our Blogs
           </h1>
           <p className="text-xl text-white/90">
             Latest insights and stories 
