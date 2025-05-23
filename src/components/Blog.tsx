@@ -191,7 +191,7 @@ const Blog = () => {
                 <article 
                   key={post.id} 
                   onClick={() => handleCardClick(post.id)}
-                  className={`group cursor-pointer bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 ${
+                  className={`group cursor-pointer bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 flex flex-col ${
                     selectedCard === post.id ? 'ring-4 ring-blue-500 ring-opacity-50 shadow-2xl scale-105' : ''
                   }`}
                 >
@@ -261,52 +261,53 @@ const Blog = () => {
                     </div>
                   )}
 
-                  <div className="p-8">
-                    {/* Date and Tags */}
-                    <div className="flex flex-wrap items-center justify-between mb-6 gap-3">
+                  <div className="p-8 flex flex-col flex-grow">
+                    {/* Date - First Line */}
+                    <div className="mb-4">
                       <time className="inline-flex items-center text-sm font-medium text-blue-700 bg-blue-50 px-4 py-2 rounded-full">
                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                         {formatDate(post.created_at)}
                       </time>
-                      
-                      {post.tags && post.tags.length > 0 && (
-                        <div className="flex flex-wrap gap-2">
-                          {post.tags.slice(0, 2).map((tag, index) => (
-                            <span 
-                              key={`${tag}-${index}`} 
-                              className="px-3 py-1.5 text-xs font-medium text-purple-700 bg-purple-50 rounded-full border border-purple-100"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                          {post.tags.length > 2 && (
-                            <span className="px-3 py-1.5 text-xs font-medium text-gray-500 bg-gray-50 rounded-full">
-                              +{post.tags.length - 2}
-                            </span>
-                          )}
-                        </div>
-                      )}
                     </div>
 
-                    {/* Title */}
+                    {/* Tags - Second Line */}
+                    {post.tags && post.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {post.tags.slice(0, 3).map((tag, index) => (
+                          <span 
+                            key={`${tag}-${index}`} 
+                            className="px-3 py-1.5 text-xs font-medium text-purple-700 bg-purple-50 rounded-full border border-purple-100"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                        {post.tags.length > 3 && (
+                          <span className="px-3 py-1.5 text-xs font-medium text-gray-500 bg-gray-50 rounded-full">
+                            ...
+                          </span>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Title - Third Line */}
                     <h2 className="text-2xl font-bold text-gray-900 mb-4 line-clamp-2 leading-tight group-hover:text-blue-600 transition-colors duration-300">
                       {post.title || 'Untitled Blog Post'}
                     </h2>
 
                     {/* Description */}
-                    <p className="text-gray-600 mb-6 leading-relaxed text-sm line-clamp-3">
+                    <p className="text-gray-600 mb-6 leading-relaxed text-sm line-clamp-3 flex-grow">
                       {truncateDescription(post.description)}
                     </p>
 
-                    {/* Read More Button */}
+                    {/* Read More Button - Always at bottom */}
                     <button 
                       onClick={(e) => {
                         e.stopPropagation();
                         handleReadMore(post);
                       }}
-                      className="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg group/btn"
+                      className="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg group/btn mt-auto"
                     >
                       <span>Read More</span>
                       <svg className="ml-2 w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
